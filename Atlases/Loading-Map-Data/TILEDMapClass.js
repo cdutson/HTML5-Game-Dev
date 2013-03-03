@@ -6,7 +6,7 @@ var TILEDMapClass = Class.extend({
     // has finished loading.
     fullyLoaded: false,
 
-	//-----------------------------------------
+    //-----------------------------------------
     // Load the json file at the url 'map' into
     // memory. This is similar to the requests
     // we've done in the past using
@@ -22,11 +22,14 @@ var TILEDMapClass = Class.extend({
         // 'fullyLoaded' flag to true.
         //
         // YOUR CODE HERE
-        
+        xhrGet(map,function(){
+            this. fullyLoaded = true;
+        });
         
     }
 
 });
+
 
 // We define a single global instance of our
 // map for the rest of our game code to access.
