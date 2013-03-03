@@ -23,7 +23,7 @@ var TILEDMapClass = Class.extend({
         //
         // YOUR CODE HERE
         xhrGet(map,function(){
-            this. fullyLoaded = true;
+            this.fullyLoaded = true;
         });
         
     }
